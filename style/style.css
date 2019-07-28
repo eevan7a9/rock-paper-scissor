@@ -5,3 +5,51 @@
   border: 0;
   border-spacing: 0;
 }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px 600px 200px;
+  grid-template-areas:
+    "top-box top-box"
+    "user-box computer-box"
+    "bottom-box bottom-box";
+}
+.head-box {
+  grid-area: top-box;
+  background: yellowgreen;
+}
+.user-box {
+  grid-area: user-box;
+  background: red;
+}
+.computer-box {
+  grid-area: computer-box;
+  background: blue;
+}
+.bottom-box {
+  grid-area: bottom-box;
+  background: salmon;
+}
