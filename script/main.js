@@ -1,1 +1,4 @@
-console.log("Hello World");
+const battle = function() {
+  let x = document.querySelector("#computerScore");
+  x.innerHTML = "1";
+};
