@@ -78,7 +78,7 @@ main {
   margin: 5px 0px;
 }
 .user-box div:hover {
-  background: #333;
+  background: rgb(190, 173, 173);
   padding: 3px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -129,4 +129,13 @@ main {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+.selected{
+  background: #333;
+  padding: 3px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
