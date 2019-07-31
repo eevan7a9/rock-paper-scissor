@@ -37,3 +37,12 @@ const generateComputerWeapon = function () {
       return "scissors"; // if number is 3 assign scissors
   }
 }
+const modal_container = document.querySelector('#modal_container');
+const closeModal = function(){
+  modal_container.style.display="none";
+}
+window.addEventListener("click", function(event){
+  if (event.target == modal_container) {
+   modal_container.style.display="none"; 
+  }
+});

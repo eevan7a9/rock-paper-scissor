@@ -12,25 +12,31 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
+
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 main {
   height: 100%;
   display: grid;
@@ -41,12 +47,14 @@ main {
     "user-box computer-box"
     "bottom-box bottom-box";
 }
+
 .head-box {
   grid-area: top-box;
   background: rgb(110, 141, 228);
   padding: 1rem;
   color: #222;
 }
+
 .user-box {
   grid-area: user-box;
   background: ghostwhite;
@@ -55,6 +63,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 .computer-box {
   grid-area: computer-box;
   background: #333;
@@ -63,20 +72,22 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 .bottom-box {
   grid-area: bottom-box;
   background: rgb(110, 141, 228);
   padding: 1rem;
 }
+
 .rock-img,
 .paper-img,
 .scissor-img {
-  min-width: 100px;
-  max-width: 130px;
-  width: 100%;
+  width: 100px;
+  width: 130px;
   height: 180px;
   margin: 5px 0px;
 }
+
 .user-box div:hover {
   background: rgb(190, 173, 173);
   padding: 3px;
@@ -86,6 +97,7 @@ main {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+
 .computer-box div {
   background: #333;
   width: 100%;
@@ -93,32 +105,39 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 .computer-box img {
   opacity: 0.5;
 }
+
 .score-box {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .score {
   display: flex;
 }
+
 .score input {
   min-width: 31px;
 }
+
 .score-output {
   background: snow;
-  min-width: 70px;
+  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .score-output p {
   align-items: center;
 }
+
 .duel button {
-  min-width: 100px;
+  width: 100px;
   height: 30px;
   font-size: 20px;
   background: #333;
@@ -130,12 +149,115 @@ main {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-.selected{
-  background: #333;
+
+.selected {
+  background: #222222a3;
+  ;
   padding: 3px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #22222287;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.modal {
+  background: white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgb(51, 51, 51) 1px 1px 9px 6px;
+}
+.close{
+  width: 100%;
+}
+.close p{
+  float: right;
+  padding: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.img-result{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background: rgb(110, 141, 228);;
+  border-radius: 100%;
+}
+.result-message{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.you-pick{
+  font-size: 14px;
+}
+.computer-pick{
+  font-size: 14px;
+  color: red;
+}
+@media (max-width: 600px) {
+  .modal {
+    width: 250px;
+    height: 250px;
+    background: rgb(219, 219, 219);
+    padding: 0 15px;
+  }
+  .head-box p{
+    font-size: 12px;
+  }
+  .score h2{
+    font-size: 14px;
+  }
+  .score-output{
+    width: 40px;
+    height: 20px;
+  }
+  .duel button{
+    height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 50px;
+  }
+  .container{
+    padding: 0;
+  }
+  .img-result{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background: rgb(110, 141, 228);;
+    border-radius: 100%;
+  }
+  .close p{
+    float: right;
+    padding: 3px;
+    font-size: 9px;
+  }
+  .rock-img,
+  .paper-img,
+  .scissor-img {
+  min-width: 80px;
+  max-width: 100px;
+  width: 100%;
+  height: 180px;
+  margin: 5px 0px;
+}
 }
