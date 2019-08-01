@@ -210,6 +210,29 @@ main {
   font-size: 14px;
   color: red;
 }
+.modal-options {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.reset,
+.continue {
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.continue {
+  background: yellowgreen;
+  color: #333;
+}
+.reset {
+  background: red;
+  color: aliceblue;
+}
 @media (max-width: 600px) {
   .modal {
     width: 250px;

@@ -13,9 +13,7 @@ let computer_points = 0;
 const battle = function() {
   if (selected_weapon) {
     let player_weapon = selected_weapon.getAttribute("id");
-    console.log(player_weapon);
     let computer_weapon = generateComputerWeapon();
-    console.log(computer_weapon);
     // if player and computer are not draw
     if (!determineDraw(player_weapon, computer_weapon)) {
       // we now determine the winner
@@ -41,6 +39,12 @@ const battle = function() {
         console.log("winner computer");
       }
     } else {
+      openModal(
+        player_weapon,
+        computer_weapon,
+        "Its a Draw!!!",
+        "../assets/eyes.png",
+      );
       console.log("draw");
     }
   }
@@ -95,6 +99,15 @@ const openModal = function(p_pick, c_pick, message, image_src) {
 };
 const closeModal = function() {
   modal_container.style.display = "none";
+};
+const resetGame = function() {
+  computer_points = 0;
+  player_points = 0;
+  computer_score.innerHTML = 0;
+  player_score.innerHTML = 0;
+  selected_weapon.classList.remove("selected");
+  selected_weapon = null;
+  closeModal();
 };
 window.addEventListener("click", function(event) {
   if (event.target == modal_container) {
