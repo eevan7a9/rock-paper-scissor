@@ -31,7 +31,6 @@
   }
 }
 
-
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -152,7 +151,6 @@ main {
 
 .selected {
   background: #222222a3;
-  ;
   padding: 3px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -162,7 +160,7 @@ main {
 }
 
 .modal-container {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -171,7 +169,6 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-
 }
 
 .modal {
@@ -185,31 +182,31 @@ main {
   border-radius: 10px;
   box-shadow: rgb(51, 51, 51) 1px 1px 9px 6px;
 }
-.close{
+.close {
   width: 100%;
 }
-.close p{
+.close p {
   float: right;
   padding: 20px;
   font-size: 15px;
   cursor: pointer;
 }
-.img-result{
+.img-result {
   width: 300px;
   height: 300px;
   padding: 20px;
-  background: rgb(110, 141, 228);;
+  background: rgb(110, 141, 228);
   border-radius: 100%;
 }
-.result-message{
+.result-message {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 900;
 }
-.you-pick{
+.you-pick {
   font-size: 14px;
 }
-.computer-pick{
+.computer-pick {
   font-size: 14px;
   color: red;
 }
@@ -220,33 +217,33 @@ main {
     background: rgb(219, 219, 219);
     padding: 0 15px;
   }
-  .head-box p{
+  .head-box p {
     font-size: 12px;
   }
-  .score h2{
+  .score h2 {
     font-size: 14px;
   }
-  .score-output{
+  .score-output {
     width: 40px;
     height: 20px;
   }
-  .duel button{
+  .duel button {
     height: 20px;
     font-size: 12px;
     font-weight: 600;
     width: 50px;
   }
-  .container{
+  .container {
     padding: 0;
   }
-  .img-result{
+  .img-result {
     width: 100px;
     height: 100px;
     padding: 20px;
-    background: rgb(110, 141, 228);;
+    background: rgb(110, 141, 228);
     border-radius: 100%;
   }
-  .close p{
+  .close p {
     float: right;
     padding: 3px;
     font-size: 9px;
@@ -254,10 +251,10 @@ main {
   .rock-img,
   .paper-img,
   .scissor-img {
-  min-width: 80px;
-  max-width: 100px;
-  width: 100%;
-  height: 180px;
-  margin: 5px 0px;
-}
+    min-width: 80px;
+    max-width: 100px;
+    width: 100%;
+    height: 180px;
+    margin: 5px 0px;
+  }
 }

@@ -1,5 +1,9 @@
-let computer_score = document.querySelector("#computer_score");
-let player_score = document.querySelector("#player_score");
+const computer_score = document.querySelector("#computer_score");
+const player_score = document.querySelector("#player_score");
+const computer_pick = document.querySelector("#computer_pick");
+const you_pick = document.querySelector("#you_pick");
+const result_message = document.querySelector("#result_message");
+const img_result = document.querySelector("#img_result");
 const modal_container = document.querySelector("#modal_container");
 // holds the value of selected weapon: rock, paper, scissors
 let selected_weapon;
@@ -18,10 +22,22 @@ const battle = function() {
       if (determineWinner(player_weapon, computer_weapon)) {
         player_points = parseInt(player_points) + 1;
         player_score.innerHTML = player_points;
+        openModal(
+          player_weapon,
+          computer_weapon,
+          "You Win!!!",
+          "../assets/happy.png",
+        );
         console.log("winner player");
       } else {
         computer_points = parseInt(computer_points) + 1;
         computer_score.innerHTML = computer_points;
+        openModal(
+          player_weapon,
+          computer_weapon,
+          "You Lose...",
+          "../assets/sad.png",
+        );
         console.log("winner computer");
       }
     } else {
@@ -69,6 +85,13 @@ const determineWinner = function(p_weapon, c_weapon) {
   } else if (p_weapon == "scissors" && c_weapon == "paper") {
     return 1;
   }
+};
+const openModal = function(p_pick, c_pick, message, image_src) {
+  modal_container.style.display = "flex";
+  you_pick.innerHTML = p_pick;
+  computer_pick.innerHTML = c_pick;
+  result_message.innerHTML = message;
+  img_result.src = image_src;
 };
 const closeModal = function() {
   modal_container.style.display = "none";
