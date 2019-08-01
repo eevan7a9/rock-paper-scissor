@@ -22,7 +22,7 @@
           <div class="score">
             <h2>Score :</h2>
             <div class="score-output">
-              <p>0</p>
+              <p id="player_score">0</p>
             </div>
           </div>
           <div class="duel">
@@ -30,19 +30,37 @@
           </div>
           <div class="score">
             <h2>Score :</h2>
-            <div class="score-output" id="s"><p id="computerScore">0</p></div>
+            <div class="score-output"><p id="computer_score">0</p></div>
           </div>
         </div>
       </div>
       <div class="user-box">
-        <div id="#rock">
-          <img class="rock-img" id="rock" onclick="selectedWeapon('rock')" src="./assets/rock_hand.png" alt="Rock" />
+        <div>
+          <img
+            class="rock-img"
+            id="rock"
+            onclick="selectedWeapon('rock')"
+            src="./assets/rock_hand.png"
+            alt="Rock"
+          />
         </div>
-        <div id="#paper">
-          <img class="paper-img" id="paper" onclick="selectedWeapon('paper')" src="./assets/paper_hand.png" alt="Paper" />
+        <div>
+          <img
+            class="paper-img"
+            id="paper"
+            onclick="selectedWeapon('paper')"
+            src="./assets/paper_hand.png"
+            alt="Paper"
+          />
         </div>
-        <div id="#scissor">
-          <img class="scissor-img" id="scissors" onclick="selectedWeapon('scissors')" src="./assets/sciss_hand.png" alt="Sciss" />
+        <div>
+          <img
+            class="scissor-img"
+            id="scissors"
+            onclick="selectedWeapon('scissors')"
+            src="./assets/sciss_hand.png"
+            alt="Sciss"
+          />
         </div>
         <h2>Choose Weapon</h2>
       </div>
@@ -65,10 +83,21 @@
           <p onclick="closeModal()">close</p>
         </div>
         <p class="result-message" id="result_message">YOU WIN!!!</p>
-        <img class="img-result" id="img_result" src="./assets/happy.png" alt="Happy Face">
-        <p id="computer_pick" class="computer-pick">Computer Pick Paper</p>
-        <p id="you_pick" class="you-pick">You Pick Rock</p>
-        
+        <img
+          class="img-result"
+          id="img_result"
+          src="./assets/happy.png"
+          alt="Happy Face"
+        />
+        <p class="computer-pick">
+          Computer Pick <a id="computer_pick">paper</a>
+        </p>
+        <p class="you-pick">
+          You Pick
+          <a id="you_pick">
+            rock
+          </a>
+        </p>
       </div>
     </div>
     <script src="./script/main.js"></script>
