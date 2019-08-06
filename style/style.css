@@ -61,6 +61,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .computer-box {
@@ -76,6 +77,13 @@ main {
   grid-area: bottom-box;
   background: rgb(110, 141, 228);
   padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.bottom-box p a {
+  color: #222;
 }
 
 .rock-img,
@@ -136,6 +144,7 @@ main {
 }
 
 .duel button {
+  cursor: pointer;
   width: 100px;
   height: 30px;
   font-size: 20px;
@@ -177,6 +186,7 @@ main {
   height: 500px;
   display: flex;
   flex-direction: column;
+  padding: 20px 0;
   /* justify-content: center; */
   align-items: center;
   border-radius: 10px;
@@ -207,6 +217,7 @@ main {
   font-size: 14px;
 }
 .computer-pick {
+  padding-top: 10px;
   font-size: 14px;
   color: red;
 }
@@ -217,6 +228,7 @@ main {
 }
 .reset,
 .continue {
+  cursor: pointer;
   font-weight: 600;
   padding: 5px;
   border-radius: 5px;
@@ -279,5 +291,8 @@ main {
     width: 100%;
     height: 180px;
     margin: 5px 0px;
+  }
+  .computer-pick {
+    padding-top: 1px;
   }
 }

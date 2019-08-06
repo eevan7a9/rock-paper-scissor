@@ -47,6 +47,8 @@ const battle = function() {
       );
       console.log("draw");
     }
+  } else {
+    confirm("Select a weapon before going to battle.");
   }
 };
 const selectedWeapon = function(weapon) {
