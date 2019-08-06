@@ -49,14 +49,22 @@ main {
 
 .head-box {
   grid-area: top-box;
-  background: rgb(110, 141, 228);
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(107, 157, 171, 1) 23.8%,
+    rgba(92, 122, 158, 1) 66%
+  );
   padding: 1rem;
   color: #222;
 }
 
 .user-box {
   grid-area: user-box;
-  background: ghostwhite;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(226, 240, 254, 1) 0%,
+    rgba(255, 247, 228, 1) 90%
+  );
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -66,7 +74,11 @@ main {
 
 .computer-box {
   grid-area: computer-box;
-  background: #333;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(87, 108, 117, 1) 0%,
+    rgba(37, 50, 55, 1) 100.2%
+  );
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -75,12 +87,17 @@ main {
 
 .bottom-box {
   grid-area: bottom-box;
-  background: rgb(110, 141, 228);
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(107, 157, 171, 1) 23.8%,
+    rgba(92, 122, 158, 1) 66%
+  );
   padding: 1rem;
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: flex-end;
+  height: 140px;
 }
 .bottom-box p a {
   color: #222;
@@ -106,7 +123,6 @@ main {
 }
 
 .computer-box div {
-  background: #333;
   width: 100%;
   display: flex;
   flex-direction: column;
