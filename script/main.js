@@ -24,7 +24,7 @@ const battle = function() {
           player_weapon,
           computer_weapon,
           "You Win!!!",
-          "../assets/happy.png",
+          "https://ik.imagekit.io/wr5lnrww0q8/rock-paper-sci/happy_6c26T-7TS.png",
         );
         console.log("winner player");
       } else {
@@ -34,7 +34,7 @@ const battle = function() {
           player_weapon,
           computer_weapon,
           "You Lose...",
-          "../assets/sad.png",
+          "https://ik.imagekit.io/wr5lnrww0q8/rock-paper-sci/sad_9UtbAeT8O.png",
         );
         console.log("winner computer");
       }
@@ -43,7 +43,7 @@ const battle = function() {
         player_weapon,
         computer_weapon,
         "Its a Draw!!!",
-        "../assets/eyes.png",
+        "https://ik.imagekit.io/wr5lnrww0q8/rock-paper-sci/eyes_KKf8Kp9Yy.png",
       );
       console.log("draw");
     }
